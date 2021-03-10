@@ -10,7 +10,6 @@ import java.util.List;
 @Getter
 @Setter
 public class Role {
-
     @Id
     private int role_ID;
     private String role_Name;

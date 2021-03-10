@@ -9,6 +9,7 @@ import java.util.List;
 @Entity
 @Setter
 @Getter
+@Table(name = "Perfumes")
 public class Perfume {
     @Id
     private String perfume_ID;
@@ -23,6 +24,10 @@ public class Perfume {
     private String image;
     private int quantity;
 
+
+    @OneToMany(mappedBy = "perfume")
+    private List<Order_Details> order_details;
+
     @ManyToOne
     @JoinColumn(name = "tradeMark_ID")
     private TradeMark tradeMark;
@@ -30,10 +35,7 @@ public class Perfume {
 
     @ManyToOne
     @JoinColumn(name = "sex_ID")
-    private Sex sex;
-
-    @OneToMany(mappedBy = "perfume")
-    private List<Order_Details> order_details;
+    private SexGroup sex;
 
     @ManyToMany(mappedBy = "perfumes")
     private List<Capacity> capacities;
