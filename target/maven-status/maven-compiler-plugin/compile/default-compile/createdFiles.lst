@@ -1,0 +1,11 @@
+com\perfume\entity\Order.class
+com\perfume\entity\Capacity.class
+com\perfume\entity\Order_Details.class
+com\perfume\test\Main.class
+com\perfume\entity\Card.class
+com\perfume\entity\Role.class
+com\perfume\config\SpringConfig.class
+com\perfume\entity\TradeMark.class
+com\perfume\entity\Perfume.class
+com\perfume\entity\SexGroup.class
+com\perfume\entity\Account.class
