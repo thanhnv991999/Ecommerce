@@ -12,7 +12,8 @@ import java.util.List;
 @Table(name = "Perfumes")
 public class Perfume {
     @Id
-    private String perfume_ID;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int perfume_ID;
     private String incense_Group;
     private String incense_Retention;
     private String origin;

@@ -14,7 +14,8 @@ import java.util.List;
 @Table(name = "orders")
 public class Order {
     @Id
-    private String order_ID;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int order_ID;
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "MM/dd/yyyy")
     private Date orderDate;
